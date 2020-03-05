@@ -1,0 +1,22 @@
+﻿<Window x:Class="painting_and_animation.line_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:painting_and_animation"
+        mc:Ignorable="d"
+        Title="line_window" Height="450" Width="800">
+    <Grid>
+
+        <!--直线，实线-->
+        <Line X1="10" Y1="20" X2="260" Y2="20" Stroke="Red" StrokeThickness="10"/>
+        <!--直线，虚线-->
+        <Line X1="10" Y1="40" X2="260" Y2="40" Stroke="Orange" StrokeDashArray="3" StrokeDashOffset="2" StrokeThickness="10"/>
+        <!--直线，设置两端的形状-->
+        <Line X1="10" Y1="60" X2="260" Y2="60" Stroke="Black"  StrokeEndLineCap="Flat" StrokeThickness="10"/>
+        <!--直线，虚线-->
+        <Line X1="10" Y1="80" X2="260" Y2="80" Stroke="Pink" StrokeEndLineCap="Round" StrokeThickness="10"/>
+        <!--直线，虚线-->
+        <Line X1="10" Y1="100" X2="260" Y2="100" Stroke="Blue" StrokeDashArray="3" StrokeDashCap="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Triangle" StrokeThickness="10"/>
+    </Grid>
+</Window>
