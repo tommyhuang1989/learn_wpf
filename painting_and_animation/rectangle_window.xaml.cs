@@ -1,5 +1,4 @@
-﻿using learn_wpf.view_models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +9,15 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace learn_wpf {
+namespace painting_and_animation {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for rectangle_window.xaml
     /// </summary>
-    public partial class MainWindow : Window {
-        public MainWindow() {
+    public partial class rectangle_window : Window {
+        public rectangle_window() {
             InitializeComponent();
-            this.DataContext = new main_window_view_model();
         }
     }
 }

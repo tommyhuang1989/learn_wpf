@@ -1,5 +1,4 @@
-﻿using learn_wpf.view_models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,14 +12,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace learn_wpf {
+namespace painting_and_animation {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-            this.DataContext = new main_window_view_model();
+        }
+
+        private void btn_show_line_click(object sender, RoutedEventArgs e) {
+            line_window window = new line_window();
+            window.ShowDialog();
         }
     }
 }
